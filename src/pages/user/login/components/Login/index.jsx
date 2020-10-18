@@ -143,6 +143,4 @@ Object.keys(LoginItem).forEach(item => {
   Login[item] = LoginItem[item];
 });
 
-console.log(Login)
-
-export default Form.create()(Login);
+export default Login;

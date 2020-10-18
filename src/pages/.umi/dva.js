@@ -26,9 +26,7 @@ app.model({ namespace: 'setting', ...(require('C:/Users/wang1/Desktop/docs/satel
 app.model({ namespace: 'user', ...(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/models/user.js').default) });
 app.model({ namespace: 'model', ...(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/login/model.js').default) });
 app.model({ namespace: 'model', ...(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/register/model.js').default) });
-app.model({ namespace: 'model', ...(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/invest/home/model.tsx').default) });
-app.model({ namespace: 'model', ...(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/invest/assetAllocation/model.tsx').default) });
-app.model({ namespace: 'model', ...(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/interface/tushare/model.tsx').default) });
+app.model({ namespace: 'model', ...(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/rocketLaunch/launchHistory/model.tsx').default) });
   return app;
 }
 

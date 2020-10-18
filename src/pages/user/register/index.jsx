@@ -397,4 +397,4 @@ class Register extends Component {
   }
 }
 
-export default Form.create()(Register);
+export default Register;

@@ -336,7 +336,7 @@ export default class RouterWrapper extends React.Component {
     }
   }
 
-  componentWillUnmount() {
+  componentDidMount() {
     this.unListen();
   }
 

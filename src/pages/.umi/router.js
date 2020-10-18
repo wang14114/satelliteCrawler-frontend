@@ -67,90 +67,17 @@ const routes = [
         routes: [
           {
             path: '/',
-            redirect: '/invest/home',
+            redirect: '/rocketlaunch/history',
             authority: ['admin', 'user'],
             exact: true,
           },
           {
-            name: 'invest',
-            icon: 'dashboard',
-            path: '/invest',
+            name: 'home',
+            path: '/home',
             routes: [
               {
-                name: 'home',
-                path: '/invest/home',
-                component: require('../invest/home').default,
-                exact: true,
-              },
-              {
-                name: 'assetAllocation',
-                path: '/invest/assetAllocation',
-                component: require('../invest/assetAllocation').default,
-                exact: true,
-              },
-              {
-                name: 'riskManagement',
-                path: '/invest/riskManagement',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'managerSelection',
-                path: '/invest/managerSelection',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'privateBanking',
-                path: '/invest/privateBanking',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'traditionalInvestment',
-                path: '/invest/traditionalInvestment',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'alternativeInvestment',
-                path: '/invest/alternativeInvestment',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'realEstate',
-                path: '/invest/realEstate',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'investmentBanking',
-                path: '/invest/investmentBanking',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'financialAccounting',
-                path: '/invest/financialAccounting',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'custodyReporting',
-                path: '/invest/custodyReporting',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'fx',
-                path: '/invest/fx',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'philanthropy',
-                path: '/invest/philanthropy',
+                name: 'dashboard',
+                path: '/home/dashboard',
                 component: require('../develop').default,
                 exact: true,
               },
@@ -165,194 +92,13 @@ const routes = [
             ],
           },
           {
-            name: 'family',
-            icon: 'table',
-            path: '/familyservice',
+            name: 'rocketLaunch',
+            path: '/rocketlaunch',
             routes: [
               {
-                name: 'home',
-                path: '/familyservice/home',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'conciergeandsecurity',
-                path: '/familyservice/conciergeandsecurity',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'familyCounselling',
-                path: '/familyservice/familyCounselling',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'familyGovernance',
-                path: '/familyservice/familyGovernance',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'highvalueassetManagement',
-                path: '/familyservice/highvalueassetManagement',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'newfamilybusiness',
-                path: '/familyservice/newfamilybusiness',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                component: () =>
-                  React.createElement(
-                    require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
-                      .default,
-                    { pagesPath: 'src/pages', hasRoutesInConfig: true },
-                  ),
-              },
-            ],
-          },
-          {
-            name: 'general',
-            icon: 'user',
-            path: '/generalservice',
-            routes: [
-              {
-                name: 'home',
-                path: '/generalservice/home',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'financialPlanning',
-                path: '/generalservice/financialPlanning',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'taxPlanning',
-                path: '/generalservice/taxPlanning',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'estatePlanning',
-                path: '/generalservice/estatePlanning',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'legalServices',
-                path: '/generalservice/legalServices',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'insurancePlanning',
-                path: '/generalservice/insurancePlanning',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'trustManagement',
-                path: '/generalservice/trustManagement',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                component: () =>
-                  React.createElement(
-                    require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
-                      .default,
-                    { pagesPath: 'src/pages', hasRoutesInConfig: true },
-                  ),
-              },
-            ],
-          },
-          {
-            name: 'administrative',
-            icon: 'highlight',
-            path: '/administrativeservice',
-            routes: [
-              {
-                name: 'home',
-                path: '/administrativeservice/home',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'ITCosts',
-                path: '/administrativeservice/ITCosts',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'officeOverheads',
-                path: '/administrativeservice/officeOverheads',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'accounting',
-                path: '/administrativeservice/accounting',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                component: () =>
-                  React.createElement(
-                    require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
-                      .default,
-                    { pagesPath: 'src/pages', hasRoutesInConfig: true },
-                  ),
-              },
-            ],
-          },
-          {
-            name: 'authorityManagement',
-            icon: 'book',
-            path: '/authorityManagement',
-            routes: [
-              {
-                name: 'userProfile',
-                path: '/authorityManagement/userProfile',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                name: 'accountType',
-                path: '/authorityManagement/accountType',
-                component: require('../develop').default,
-                exact: true,
-              },
-              {
-                component: () =>
-                  React.createElement(
-                    require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
-                      .default,
-                    { pagesPath: 'src/pages', hasRoutesInConfig: true },
-                  ),
-              },
-            ],
-          },
-          {
-            name: 'interface',
-            icon: '',
-            path: '/interface',
-            routes: [
-              {
-                name: 'tushare',
-                path: '/interface/tushare',
-                component: require('../interface/tushare').default,
-                exact: true,
-              },
-              {
-                name: 'wind',
-                path: '/interface/wind',
-                component: require('../develop').default,
+                name: 'launchHistory',
+                path: '/rocketlaunch/history',
+                component: require('../rocketLaunch/launchHistory').default,
                 exact: true,
               },
               {

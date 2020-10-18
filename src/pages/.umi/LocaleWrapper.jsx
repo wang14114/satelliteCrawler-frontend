@@ -29,14 +29,13 @@ const useLocalStorage = true;
 
 import { LocaleProvider, version } from 'antd';
 import moment from 'moment';
-import 'moment/locale/zh-cn';
-let defaultAntd = require('antd/es/locale-provider/zh_CN');
+let defaultAntd = require('antd/es/locale-provider/en_US');
 defaultAntd = defaultAntd.default || defaultAntd;
 
 const localeInfo = {
   'en-US': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/locales/en-US.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/interface/tushare/locales/en-US.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/invest/assetAllocation/locales/en-US.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/invest/home/locales/en-US.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/result/fail/locales/en-US.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/result/success/locales/en-US.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/login/locales/en-US.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/register-result/locales/en-US.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/register/locales/en-US.js')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/locales/en-US.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/result/fail/locales/en-US.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/result/success/locales/en-US.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/rocketLaunch/launchHistory/locales/en-US.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/login/locales/en-US.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/register-result/locales/en-US.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/register/locales/en-US.js')),
     },
     locale: 'en-US',
     antd: require('antd/es/locale-provider/en_US'),
@@ -45,7 +44,7 @@ const localeInfo = {
   },
   'pt-BR': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/locales/pt-BR.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/interface/tushare/locales/pt-BR.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/invest/assetAllocation/locales/pt-BR.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/invest/home/locales/pt-BR.ts')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/locales/pt-BR.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/rocketLaunch/launchHistory/locales/pt-BR.ts')),
     },
     locale: 'pt-BR',
     antd: require('antd/es/locale-provider/pt_BR'),
@@ -54,7 +53,7 @@ const localeInfo = {
   },
   'zh-CN': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/locales/zh-CN.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/interface/tushare/locales/zh-CN.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/invest/assetAllocation/locales/zh-CN.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/invest/home/locales/zh-CN.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/result/fail/locales/zh-CN.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/result/success/locales/zh-CN.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/login/locales/zh-CN.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/register-result/locales/zh-CN.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/register/locales/zh-CN.js')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/locales/zh-CN.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/result/fail/locales/zh-CN.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/result/success/locales/zh-CN.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/rocketLaunch/launchHistory/locales/zh-CN.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/login/locales/zh-CN.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/register-result/locales/zh-CN.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/register/locales/zh-CN.js')),
     },
     locale: 'zh-CN',
     antd: require('antd/es/locale-provider/zh_CN'),
@@ -63,7 +62,7 @@ const localeInfo = {
   },
   'zh-TW': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/locales/zh-TW.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/interface/tushare/locales/zh-TW.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/invest/assetAllocation/locales/zh-TW.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/invest/home/locales/zh-TW.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/result/fail/locales/zh-TW.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/result/success/locales/zh-TW.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/login/locales/zh-TW.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/register-result/locales/zh-TW.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/register/locales/zh-TW.js')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/locales/zh-TW.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/result/fail/locales/zh-TW.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/result/success/locales/zh-TW.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/rocketLaunch/launchHistory/locales/zh-TW.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/login/locales/zh-TW.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/register-result/locales/zh-TW.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/wang1/Desktop/docs/satellite/satelliteCrawler-frontend/src/pages/user/register/locales/zh-TW.js')),
     },
     locale: 'zh-TW',
     antd: require('antd/es/locale-provider/zh_TW'),
@@ -74,14 +73,14 @@ const localeInfo = {
 
 class LocaleWrapper extends React.Component{
   state = {
-    locale: 'zh-CN',
+    locale: 'en-US',
   };
   getAppLocale(){
     let appLocale = {
-      locale: 'zh-CN',
+      locale: 'en-US',
       messages: {},
-      data: require('react-intl/locale-data/zh'),
-      momentLocale: 'zh-cn',
+      data: require('react-intl/locale-data/en'),
+      momentLocale: '',
     };
 
     const runtimeLocale = require('umi/_runtimePlugin').mergeConfig('locale') || {};
@@ -102,7 +101,7 @@ class LocaleWrapper extends React.Component{
     } else if(localeInfo[runtimeLocaleDefault]){
       appLocale = localeInfo[runtimeLocaleDefault];
     } else {
-      appLocale = localeInfo['zh-CN'] || appLocale;
+      appLocale = localeInfo['en-US'] || appLocale;
     }
     window.g_lang = appLocale.locale;
     window.g_langSeparator = baseSeparator || '-';
