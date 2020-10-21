@@ -1,5 +1,6 @@
 import { Button, Card, DatePicker } from 'antd';
 import React from 'react';
+import { FormattedMessage } from 'umi-plugin-react/locale';
 
 const controlPanel = ({
   onClickClearAll,
@@ -18,15 +19,18 @@ const controlPanel = ({
       }}
     >
       <Button type="primary" size="middle" onClick={() => onClickClearAll()}>
-        Clear All
+        <FormattedMessage id="launch-data.control.clearAll" defaultMessage="Clear ALL" />
       </Button>
-      &nbsp;&nbsp;&nbsp;&nbsp;
+      <br />
+      <br />
       <Button type="primary" size="middle" onClick={() => onClickFetch()}>
-        Fetch Launch Data
+        <FormattedMessage id="launch-data.control.fetch" defaultMessage="Fetch Launch Data" />
       </Button>
       &nbsp;&nbsp;&nbsp;&nbsp;
-      <DatePicker picker="year" onChange={value => onSelectYear(value)} /> (If you don't select
-      year, will fetch all the data)
+      <DatePicker picker="year" onChange={value => onSelectYear(value)} />
+      <br />
+      <br />
+      <FormattedMessage id="launch-data.control.fetchInfo" defaultMessage="" />
     </Card>
   </>
 );

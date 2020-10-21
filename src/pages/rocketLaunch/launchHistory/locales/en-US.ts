@@ -2,7 +2,6 @@ export default {
   'launch-data.table.rank': 'ID',
   'launch-data.table.rocketName': 'Rocket',
   'launch-data.table.launchDate': 'Launch Date',
-  'launch-data.table.weekly-range': 'Percentage',
   'launch-data.table.satelliteName': 'Satellite',
   'launch-data.table.satelliteNo': 'No.',
   'launch-data.table.satelliteStatus': 'Status',
@@ -21,4 +20,7 @@ export default {
   'launch-data.table.rocket-title': 'Rocket Data',
   'launch-data.table.satellite-title': 'Satellite Data',
   'launch-data.table.orbit-title': 'Orbit Data',
+  'launch-data.control.clearAll': 'Clear All',
+  'launch-data.control.fetch': 'Fetch Launch Data',
+  'launch-data.control.fetchInfo': `（if you don't select year, will fetch all data from 2008 to 2020）`,
 };

@@ -14,11 +14,8 @@ const plugins = [
         hmr: true,
       },
       locale: {
-        // default false
         enable: true,
-        // default zh-CN
         default: 'en-US',
-        // default true, when it is true, will use `navigator.language` overwrite default
         baseNavigator: true,
       },
       pwa: pwa
@@ -45,22 +42,23 @@ const plugins = [
       autoAddMenu: true,
     },
   ],
+  //['umi-plugin-antd-icon-config', {}]
 ];
 
-if (isAntDesignProPreview) {
-  plugins.push([
-    'umi-plugin-ga',
-    {
-      code: 'UA-72788897-6',
-    },
-  ]);
-  plugins.push([
-    'umi-plugin-pro',
-    {
-      serverUrl: 'https://ant-design-pro.netlify.com',
-    },
-  ]);
-}
+// if (isAntDesignProPreview) {
+//   plugins.push([
+//     'umi-plugin-ga',
+//     {
+//       code: 'UA-72788897-6',
+//     },
+//   ]);
+//   plugins.push([
+//     'umi-plugin-pro',
+//     {
+//       serverUrl: 'http://test.myfocuspro.com',
+//     },
+//   ]);
+// }
 
 export default {
   plugins,
@@ -198,11 +196,9 @@ export default {
   chainWebpack: webpackPlugin,
   proxy: {
     '/server/api/': {
-      target: 'http://127.0.0.1:8080',
-      //target: 'http://test.api.myfocuspro.com',
-      changeOrigin: true, //pathRewrite: {
-      // '^/server': '',
-      //},
+      //target: 'http://127.0.0.1:8080',
+      target: 'http://test.myfocuspro.com/',
+      changeOrigin: false,
     },
   },
 };

@@ -21,15 +21,14 @@ const menuDataRender = menuList =>
   });
 
 const footerRender = (_, defaultDom) => {
-  
   if (!isAntDesignPro()) {
     //return defaultDom;
-    return "";
+    return '';
   }
 
   return (
     <>
-    {/*
+      {/*
       {defaultDom}
       <div
         style={{
@@ -82,6 +81,7 @@ const BasicLayout = props => {
   return (
     <>
       <ProLayout
+        logo={logo}
         onCollapse={handleMenuCollapse}
         menuItemRender={(menuItemProps, defaultDom) => {
           if (menuItemProps.isUrl) {
